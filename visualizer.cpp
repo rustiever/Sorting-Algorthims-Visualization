@@ -354,7 +354,6 @@ void makedelay(int)
         sorting = 0;
     }
     speed = 1;
-    // getchar();
     glutPostRedisplay();
     glutTimerFunc(speed, makedelay, 100);
 }

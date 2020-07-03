@@ -7,3 +7,9 @@ built and tested on Mac
 - Dynamic coloring
 
 - Two modes for interactioon
+
+- Friendly interface
+
+
+
+Note: currently the file is mix of c and c++
