@@ -12,4 +12,6 @@ built and tested on Mac
 
 
 
-Note: currently the file is mix of c and c++
+Note: currently the file is mix of c and c++. So need to seperate them. 
+Current goal is make the code more readable and maintainable.
+
