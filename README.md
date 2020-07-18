@@ -1,22 +1,38 @@
-# SortingAlgorthimsVisualizer
-Visualisation of some popular sorting algorithms using openGL 
+# Sorting Algorthim Visualizer
 
-built and tested on Mac 
+Visualisation(internal working) of some popular sorting algorithms using openGL framework. 
+
 
 ## Features
-- Dynamic coloring
+- Dynamic coloring and theme
 
 - Two modes for interactioon
 
 - Friendly interface
 
+## usage
+- 
+
+## Algorithms 
+- Bubble Sort
+
+- Selection Sort
+
+- Insertion Srot
+
+- Ripple Sort (Another version of Bubble sort)
+
+- Comb Sort (Another version of Bubble sort)
+
 ## To Run
-clone this repo  
+Ensure you have openGL framework installed.
+clone this repo   
 cd to this repo  
 **Mac** =>``` g++ -framework OpenGL -framework GLUT visualizer.cpp -o visualizer -Wno-deprecated```   
 **Linux/Ubuntu** => ```g++ visualizer.cpp -lGL -lGLU -lglut ```
 
+Built and Tested on Mac OS ✅👍🏻
 
-Note: currently the file is mix of c and c++. So need to seperate them. 
-Current goal is make the code more readable and maintainable.
+Note: currently the cpp file is mix of c and c++. So need to seperate them. 
+Current goal is to make the code more readable and maintainable.
 
