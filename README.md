@@ -1,4 +1,4 @@
-# Sorting Algorthim Visualizer
+# Sorting Algorthim Visualization
 Visualisation(internal working) of some popular sorting algorithms using openGL framework. 
 
 # ABOUT SORTING
@@ -28,6 +28,14 @@ This project does not want to teach the theory of sorting algorithms, there are 
 
 - Comb Sort (Another version of Bubble sort)
 
+## ScreenShots
+![bublesort](https://user-images.githubusercontent.com/60929919/97009257-80b09800-1561-11eb-9dd9-ddb24da965f0.png)
+![ripple-sort](https://user-images.githubusercontent.com/60929919/97009411-b190cd00-1561-11eb-9664-42d591652e97.gif)
+#### OutStanding Mode:
+![outstandig-mode](https://user-images.githubusercontent.com/60929919/97009270-84dcb580-1561-11eb-9fd2-4da52191da03.gif)
+#### Interactive Mode:
+![interactive-mode](https://user-images.githubusercontent.com/60929919/97009445-b9507180-1561-11eb-8645-a9673339f620.gif)
+
 ## How To Use
 ```bash
 # Clone this repository
@@ -45,5 +53,5 @@ $ g++ visualizer.cpp -lGL -lGLU -lglut
 ```
 Built and Tested on Mac OS ✅👍🏻
 
-Note: currently the cpp file is mix of c and c++. So need to seperate them. 
-Current goal is to make the code more readable and maintainable.
+
+Made with :heart: and C++.
