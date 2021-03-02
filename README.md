@@ -20,7 +20,7 @@ This project does not want to teach the theory of sorting algorithms, there are 
 - To randamize the inputs press `r`
 - To change\select the algorithm press `c`
 - To set new random color press`z` which also randomize the inputs
-- Press <ESC> key to terminate the application
+- Press &lt;ESC&gt; key to terminate the application
 
 ## Algorithms 
 - Bubble Sort
