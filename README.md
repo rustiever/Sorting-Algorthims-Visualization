@@ -14,8 +14,13 @@ This project does not want to teach the theory of sorting algorithms, there are 
 - Two modes for interaction
 - Friendly interface
 
-## usage
-- will be updated shortly
+## Menu
+- To start the sorting press `s`
+- To pause the soritng press `p`
+- To randamize the inputs press `r`
+- To change\select the algorithm press `c`
+- To set new random color press`z` which also randomize the inputs
+- Press <ESC> key to terminate the application
 
 ## Algorithms 
 - Bubble Sort
@@ -36,20 +41,23 @@ This project does not want to teach the theory of sorting algorithms, there are 
 #### Interactive Mode:
 ![interactive-mode](https://user-images.githubusercontent.com/60929919/97009445-b9507180-1561-11eb-8645-a9673339f620.gif)
 
-## How To Use
+## Installation 
 ```bash
 # Clone this repository
 $ git clone https://github.com/rustiever/SortingAlgorthimsVisualizer.git
 
 # Go into the repository
 $ cd SortingAlgorthimsVisualizer
+```
 
-# Run application
-## Mac Os
+## Run application
+### Mac Os
+```bash
 $ g++ -framework OpenGL -framework GLUT visualizer.cpp -o visualizer -Wno-deprecated
-## Linux/Debian/Ubuntu
+```
+### Linux/Debian/Ubuntu
+```bash 
 $ g++ visualizer.cpp -lGL -lGLU -lglut
-
 ```
 Built and Tested on Mac OS ✅👍🏻
 
