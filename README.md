@@ -1,5 +1,5 @@
 # Sorting Algorthim Visualization
-Visualisation(internal working) of some popular sorting algorithms using openGL framework. 
+Visualisation of some popular sorting algorithms using openGL framework. 
 
 # ABOUT SORTING
 Sorting a sequence of items is one of the pillar of Computer Science.
@@ -7,20 +7,30 @@ A sorting algorithm is an algorithm that organizes elements of a sequence in a c
 
 This project is an attempt to visualize and help to understand how some of the most famous sorting algorithms work. This project provides two standpoints to look at algorithms, one is more artistic (apologies to any real artist out there), the other is more analytical aiming at explaining algorithm step by step.
 
-This project does not want to teach the theory of sorting algorithms, there are amazing resources, books and courses for this purpose. Sorting Visualizer program is for the ones who want to see these algorithms under a different ligth and hopefully appreciate the processing and brain power behind these piece of genius that in many ways have changed the way we live.
+This project does not want to teach the theory of sorting algorithms, there are amazing resources, books and courses for this purpose. Sorting Visualizer program is for the ones who want to see these algorithms under a different light and theme and hopefully appreciate the processing and brain power behind these piece of genius that in many ways have changed the way we live.
 
 ## Features
-- Dynamic coloring and theme
+- Provides random theme for every run
 - Two modes for interaction
-- Friendly interface
+- Keyboard interface
+
+## About Mode
+### Interactive Mode
+Using this mode you can watch each swap of variables with interaction. 
+Press `s` to go to next swap.
+
+### Outstanding Mode
+This mode will run the selected algorithm with predefined constant speed.
 
 ## Menu
 - To start the sorting press `s`
 - To pause the soritng press `p`
 - To randamize the inputs press `r`
 - To change\select the algorithm press `c`
+- To set interactive mode press `i`
+- To set outstanding mode press `o`
 - To set new random color press`z` which also randomize the inputs
-- Press &lt;ESC&gt; key to terminate the application
+- Press `<ESC>` key to terminate the application
 
 ## Algorithms 
 - Bubble Sort
@@ -50,7 +60,7 @@ $ git clone https://github.com/rustiever/SortingAlgorthimsVisualizer.git
 $ cd SortingAlgorthimsVisualizer
 ```
 
-## Run application
+## Build/Compile Application
 ### Mac Os
 ```bash
 $ g++ -framework OpenGL -framework GLUT visualizer.cpp -o visualizer -Wno-deprecated
@@ -58,6 +68,10 @@ $ g++ -framework OpenGL -framework GLUT visualizer.cpp -o visualizer -Wno-deprec
 ### Linux/Debian/Ubuntu
 ```bash 
 $ g++ visualizer.cpp -lGL -lGLU -lglut
+```
+## Run Application
+```bash
+$ ./visualizer
 ```
 Built and Tested on Mac OS ✅👍🏻
 
