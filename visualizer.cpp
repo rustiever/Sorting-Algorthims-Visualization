@@ -33,7 +33,6 @@ int i = 0, j = 0; // To iterate through the array
 int flag = 0;     // For Insertion Sort
 int dirflag = 0;  // For Ripple Sort, to change direction at the ends
 int count = 1;    // For Ripple Sort, to keep count of how many are sorted at the end
-int k = 0;        // To Switch from Welcome screen to Main Screen
 int sorting = 0;  // 1 if Sorted
 const char *sort_string[] = {"Bubble Sort", "Selection Sort", "Insertion Sort", "Ripple Sort", "Comb Sort"};
 int sort_count = 0; // To cycle through the string
@@ -68,7 +67,7 @@ void shellSort();
 /*~~Function Definations~~*/
 
 // Function Definaions
-char *whichmode(const int d)
+char* whichmode(const int d)
 {
     if (d == 1)
     {
@@ -173,53 +172,6 @@ void display_text()
     }
 }
 
-// Intro Page of this project
-void frontPage()
-{
-    glColor3d(cc[0], cc[1], cc[2]);
-    bitmap_output(190, 750, "MANGALORE INSTITUTE OF TECHNOLOGY & ENGINEERING", GLUT_BITMAP_TIMES_ROMAN_24);
-    glBegin(GL_LINE_LOOP);
-    glVertex2f(187, 740);
-    glVertex2f(530, 740);
-    glEnd();
-
-    bitmap_output(240, 700, "DEPARTMENT OF COMPUTER SCIENCE", GLUT_BITMAP_TIMES_ROMAN_24);
-    bitmap_output(300, 600, "MINI PROJECT ON", GLUT_BITMAP_TIMES_ROMAN_24);
-
-    glBegin(GL_QUADS);
-    glColor3d(cc[3], cc[4], cc[5]);
-    glVertex2f(185, 580.0);
-    glColor3d(cc[6], cc[7], cc[8]);
-    glVertex2f(185, 540);
-    glColor3d(cc[9], cc[10], cc[11]);
-    glVertex2f(500, 540);
-    glColor3d(cc[12], cc[13], cc[14]);
-    glVertex2f(500, 580.0);
-    glEnd();
-    glColor3d(cc[15], cc[16], cc[17]);
-    bitmap_output(195, 550, "SORTING ALGORITHMS VISUALIZER USING OPENGL", GLUT_BITMAP_TIMES_ROMAN_24);
-
-    glColor3d(cc[18], cc[19], cc[20]);
-    bitmap_output(185, 500, "BY:", GLUT_BITMAP_TIMES_ROMAN_24);
-    bitmap_output(190, 470, "1.SHARAN (4MT17CS095)", GLUT_BITMAP_TIMES_ROMAN_24);
-    bitmap_output(190, 440, "2.SUMITH SHETTY (4MT17CS107)", GLUT_BITMAP_TIMES_ROMAN_24);
-    bitmap_output(440, 500, "UNDER THE GUIDANCE OF:", GLUT_BITMAP_TIMES_ROMAN_24);
-    bitmap_output(445, 470, "1. MRS. JEEVITHA SAMPATH", GLUT_BITMAP_TIMES_ROMAN_24);
-    bitmap_output(445, 440, "2. MS. SUNITHA N V", GLUT_BITMAP_TIMES_ROMAN_24);
-    glBegin(GL_QUADS);
-    glColor3d(cc[21], cc[22], cc[23]);
-    glVertex2f(500, 110.0);
-    glColor3d(cc[24], cc[25], cc[26]);
-    glVertex2f(500, 160);
-    glColor3d(cc[27], cc[28], cc[29]);
-    glVertex2f(786, 160);
-    glColor3d(cc[30], cc[31], cc[32]);
-    glVertex2f(786, 110.0);
-    glEnd();
-    glColor3d(cc[33], cc[34], cc[35]);
-    bitmap_output(510, 125, "PRESS ENTER TO CONTINUE......", GLUT_BITMAP_HELVETICA_18);
-}
-
 // Initailization of values also call whenever r key is pressed
 void Initialize()
 {
@@ -276,10 +228,7 @@ void display()
     int ix, temp;
     glClear(GL_COLOR_BUFFER_BIT);
 
-    if (k == 0)
-        frontPage();
-    else
-    {
+    
         display_text();
         char text[10];
 
@@ -318,7 +267,6 @@ void display()
             glEnd();
             swapflag = 0;
         }
-    }
     glFlush();
 }
 
@@ -358,16 +306,17 @@ void makedelay(int)
 // Keyboard Function
 void keyboard(unsigned char key, int x, int y)
 {
-    if (key == 13)
-    {
-        k = 1;
-        Initialize();
-    }
-    else if (key == 'k')
+    // if (key == 13)
+    // {
+    //     k = 1;
+    //     Initialize();
+    // }
+    // else
+     if (key == 'k')
     {
         speed = 50;
     }
-    else if (k == 1 && sorting != 1)
+    else if (sorting != 1)
     {
         switch (key)
         {
@@ -400,7 +349,7 @@ void keyboard(unsigned char key, int x, int y)
             break;
         }
     }
-    else if (k == 1 && sorting == 1)
+    else if (sorting == 1)
     {
         if (key == 'p')
             sorting = 0;
